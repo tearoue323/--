@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>菜單|xx早餐店</title>
+    <!--Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--自己的css-->
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #fff;">
+        <a class="navbar-brand" href="/templates/home.html">xx早餐店</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" >
+          <ul class="navbar-nav">
+            <li><a href="/templates/home.html">菜單</a></li>
+                      <li><a href="#">登入</a></li>
+                  </ul>
+        </div>
+      </nav>
+      <div class="container-fluid" id="store_h" >
+        <div class="row" >
+            <div class="col-12 py-3" >
+                <h2 class="m-0">
+                    xx早餐店            
+                </h2>
+            </div>
+            <div class="col-12" >
+                <p class="text-name">• 只賣早餐 •<br>
+                    雲林縣斗六市大學路三段123號 - <a data-toggle="modal" data-target="#DetailAddress" href="https://reurl.cc/yLZ7pM"> <span style="text-decoration: underline;">詳細資訊</span></a></p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="product_category_height"  style="min-height: 130px;">
+        <hr>
+
+    <div id="product_category_fixed_top"  class="">
+        <h4>餐點分類</h4>
+            <div class= ">
+                <div class="col">
+                    <a href="#" class="btn btn-info">飲料</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="btn btn-info">蛋餅</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="btn btn-info">吐司</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <button type:button value:"蛋餅" background-color:blue>
+        <p>
+            <button type:button value:"原味蛋餅$30"><img src="static\img\Original_egg_cake.jpg" alt="image" border="0"></button>
+            <p>
+                <h2>原味蛋餅 $30</h2><br>
+                <input type="checkbox" name="Over-egg">加全熟蛋 +$15<br>
+                <input type="checkbox" name="Over-easy egg">加半熟蛋 +$15<br>
+                <input type="checkbox" name="Add cheese">加起司 +$15<br>
+                <input type="checkbox" name="No sauce or dressing">不加醬<br>
+                <input type="checkbox" name="Spicy">加辣<br>
+                <button id="decreaseBtn">-</button>
+                <input type="text" id="quantity" value="1">
+                <button id="increaseBtn">+</button><br>
+                <button type:button value:"加到購物車" background-color:red></button>
+            </p><br>
+            <button type:button value:"起司蛋餅$40"><img src="static\img\cheese_egg_cake.jpg" alt="image" border="0"></button>
+            <p>
+                <h2>起司蛋餅 $40</h2><br>
+                <input type="checkbox" name="Over-egg">加全熟蛋 +$15<br>
+                <input type="checkbox" name="Over-easy egg">加半熟蛋 +$15<br>
+                <input type="checkbox" name="Add cheese">加起司 +$15<br>
+                <input type="checkbox" name="No sauce or dressing">不加醬<br>
+                <input type="checkbox" name="Spicy">加辣<br>
+                <button id="decreaseBtn">-</button>
+                <input type="text" id="quantity" value="1">
+                <button id="increaseBtn">+</button><br>
+                <button type:button value:"加到購物車" background-color:red></button>
+            </p><br>
+            <button type:button value:"玉米蛋餅$35"><img src="static\img\corn_egg_cake.jpg" alt="image" border="0"></button>
+            <p>
+                <h2>玉米蛋餅 $35</h2><br>
+                <input type="checkbox" name="Over-egg">加全熟蛋 +$15<br>
+                <input type="checkbox" name="Over-easy egg">加半熟蛋 +$15<br>
+                <input type="checkbox" name="Add cheese">加起司 +$15<br>
+                <input type="checkbox" name="No sauce or dressing">不加醬<br>
+                <input type="checkbox" name="Spicy">加辣<br>
+                <button id="decreaseBtn">-</button>
+                <input type="text" id="quantity" value="1">
+                <button id="increaseBtn">+</button><br>
+                <button type:button value:"加到購物車" background-color:red></button>
+            </p><br>
+        </p>
+    </button>
+    <button type:button value:"飲品" background-color:blue>
+        <p>
+            <button type:button value:"紅茶$20"><img src="static\img\black_tea.jpg" alt="image" border="0"></button>
+            <p>
+                <h2>紅茶 $20</h2><br>
+                <input type="checkbox" name="L">L +$5<br>
+                <input type="checkbox" name="Hot">熱<br>
+                <button id="decreaseBtn">-</button>
+                <input type="text" id="quantity" value="1">
+                <button id="increaseBtn">+</button><br>
+                <button type:button value:"加到購物車" background-color:red></button>
+            </p><br>
+            <button type:button value:"豆漿$20"><img src="static\img\soy_milk.jpg" alt="image" border="0"></button>
+            <p>
+                <h2>豆漿 $20</h2><br>
+                <input type="checkbox" name="L">L +$5<br>
+                <input type="checkbox" name="Hot">熱<br>
+                <input type="checkbox" name="No sugar">無糖<br>
+                <button id="decreaseBtn">-</button>
+                <input type="text" id="quantity" value="1">
+                <button id="increaseBtn">+</button><br>
+                <button type:button value:"加到購物車" background-color:red></button>
+            </p><br>
+            <button type:button value:"青茶$20"><img src="static\img\unsweetened_green_tea.jpg" alt="image" border="0"></button>
+            <p>
+                <h2>青茶(無糖) $20</h2><br>
+                <input type="checkbox" name="L">L +$5<br>
+                <input type="checkbox" name="Hot">熱<br>
+                <button id="decreaseBtn">-</button>
+                <input type="text" id="quantity" value="1">
+                <button id="increaseBtn">+</button><br>
+                <button type:button value:"加到購物車" background-color:red></button>
+            </p><br>
+            <button type:button value:"奶茶$25"><img src="static\img\milk_tea.jpg" alt="image" border="0"></button>
+            <p>
+                <h2>奶茶 $25</h2><br>
+                <input type="checkbox" name="L">L +$5<br>
+                <input type="checkbox" name="Hot">熱<br>
+                <button id="decreaseBtn">-</button>
+                <input type="text" id="quantity" value="1">
+                <button id="increaseBtn">+</button><br>
+                <button type:button value:"加到購物車" background-color:red></button>
+            </p><br>
+        </p>
+    </button>
+    <button type:button value:"果醬吐司" background-color:blue>
+        <p>
+            <button type:button value:"草莓吐司$20"><img src="static\img\strawberry_toast.png" alt="image" border="0"></button>
+            <p>
+                <h2>草莓吐司 $20</h2><br>
+                <input type="checkbox" name="Thick slices">換厚片 +$5<br>
+                <input type="checkbox" name="More jam">醬多<br>
+                <input type="checkbox" name="Less jam">醬少<br>
+                <button id="decreaseBtn">-</button>
+                <input type="text" id="quantity" value="1">
+                <button id="increaseBtn">+</button><br>
+                <button type:button value:"加到購物車" background-color:red></button>
+            </p><br>
+            <button type:button value:"巧克力吐司$20"><img src="static\img\chocolate_toast.png" alt="image" border="0"></button>
+            <p>
+                <h2>巧克力吐司 $20</h2><br>
+                <input type="checkbox" name="Thick slices">換厚片 +$5<br>
+                <input type="checkbox" name="More jam">醬多<br>
+                <input type="checkbox" name="Less jam">醬少<br>
+                <button id="decreaseBtn">-</button>
+                <input type="text" id="quantity" value="1">
+                <button id="increaseBtn">+</button><br>
+                <button type:button value:"加到購物車" background-color:red></button>
+            </p><br>
+            <button type:button value:"奶酥吐司$20"><img src="static\img\milk_crumble_toast.png" alt="image" border="0"></button>
+            <p>
+                <h2>奶酥吐司 $20</h2><br>
+                <input type="checkbox" name="Thick slices">換厚片 +$5<br>
+                <input type="checkbox" name="More jam">醬多<br>
+                <input type="checkbox" name="Less jam">醬少<br>
+                <button id="decreaseBtn">-</button>
+                <input type="text" id="quantity" value="1">
+                <button id="increaseBtn">+</button><br>
+                <button type:button value:"加到購物車" background-color:red></button>
+            </p><br>
+            <button type:button value:"藍莓吐司$20"><img src="https://i.ibb.co/yktRKHh/image.png" alt="image" border="0"></button>
+            <p>
+                <h2>藍莓吐司 $20</h2><br>
+                <input type="checkbox" name="Thick slices">換厚片 +$5<br>
+                <input type="checkbox" name="More jam">醬多<br>
+                <input type="checkbox" name="Less jam">醬少<br>
+                <button id="decreaseBtn">-</button>
+                <input type="text" id="quantity" value="1">
+                <button id="increaseBtn">+</button><br>
+                <button type:button value:"加到購物車" background-color:red></button>
+            </p><br>
+            <button type:button value:"香蒜吐司$20"><img src="https://i.ibb.co/yktRKHh/image.png" alt="image" border="0"></button>
+            <p>
+                <h2>香蒜吐司 $20</h2><br>
+                <input type="checkbox" name="Thick slices">換厚片 +$5<br>
+                <input type="checkbox" name="More jam">醬多<br>
+                <input type="checkbox" name="Less jam">醬少<br>
+                <button id="decreaseBtn">-</button>
+                <input type="text" id="quantity" value="1">
+                <button id="increaseBtn">+</button><br>
+                <button type:button value:"加到購物車" background-color:red></button>
+            </p><br>
+        </p>
+    </button>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
